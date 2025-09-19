@@ -1,0 +1,192 @@
+/* ===== Unique CSS for StoresPage.jsx ===== */
+.storespage-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f9f9fb;
+}
+
+/* Sidebar */
+.storespage-sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.storespage-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5c4caf;
+  margin-bottom: 20px;
+}
+
+.storespage-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.storespage-sidebar ul li {
+  margin: 15px 0;
+}
+
+.storespage-sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.storespage-sidebar ul li a:hover {
+  color: #7b61ff;
+}
+
+/* Main Content */
+.storespage-main {
+  flex: 1;
+  padding: 30px;
+}
+
+.storespage-title {
+  font-size: 22px;
+  color: #5c4caf;
+  margin-bottom: 5px;
+}
+
+.storespage-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Search */
+.storespage-searchbox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.storespage-searchbox input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.storespage-searchbox button {
+  background: #7b61ff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.storespage-searchbox button:hover {
+  opacity: 0.9;
+}
+
+/* Store Cards */
+.storespage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.storespage-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.storespage-category {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin: 6px 0;
+}
+
+.storespage-address {
+  font-size: 13px;
+  color: #666;
+  margin: 6px 0;
+}
+
+.storespage-rating {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+/* User Rating */
+.storespage-user-rating {
+  margin-top: 10px;
+}
+
+.storespage-stars {
+  display: flex;
+  gap: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.storespage-star {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.storespage-star.active {
+  color: gold;
+}
+
+.storespage-rated {
+  font-size: 13px;
+  color: #444;
+  margin-top: 4px;
+}
+
+/* Popup */
+.storespage-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #7b61ff;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  animation: fadein 0.3s, fadeout 0.3s 1.7s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .storespage-container {
+    flex-direction: column;
+  }
+
+  .storespage-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .storespage-main {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,132 @@
+/* ===== Unique CSS for LoginPage.jsx ===== */
+.loginpage-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f7f7fc, #fff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.loginpage-wrapper {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.loginpage-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.loginpage-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.loginpage-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5c4caf;
+}
+
+.loginpage-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.loginpage-demo {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.loginpage-form h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.loginpage-form p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.loginpage-form label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.loginpage-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.loginpage-form input:focus {
+  border-color: #7b61ff;
+  outline: none;
+}
+
+.loginpage-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #7b61ff, #9d7dff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.loginpage-button:hover {
+  opacity: 0.9;
+}
+
+.loginpage-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+}
+
+.loginpage-footer a {
+  color: #7b61ff;
+  text-decoration: none;
+}
+
+.loginpage-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .loginpage-wrapper {
+    padding: 20px 15px;
+  }
+
+  .loginpage-title {
+    font-size: 20px;
+  }
+
+  .loginpage-demo {
+    font-size: 13px;
+    padding: 12px;
+  }
+}

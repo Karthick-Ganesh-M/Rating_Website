@@ -1,0 +1,153 @@
+/* ===== Unique CSS for SignupPage.jsx ===== */
+.signuppage-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f7f7fc, #fff);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.signuppage-wrapper {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signuppage-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.signuppage-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.signuppage-title {
+  font-size: 22px;
+  font-weight: bold;
+
+  /* Gradient text */
+  background: linear-gradient(90deg, #7b61ff, #9d7dff);
+
+  /* ✅ Standard property */
+  background-clip: text;
+
+  /* ✅ Vendor-prefixed for Safari/Chrome */
+  -webkit-background-clip: text;
+
+  /* ✅ Make text transparent to show gradient */
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* fallback */
+}
+
+.signuppage-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+.signuppage-form h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.signuppage-form p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.signuppage-form label {
+  display: block;
+  font-size: 14px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.signuppage-required {
+  color: red;
+}
+
+.signuppage-form input,
+.signuppage-form textarea,
+.signuppage-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.signuppage-form input:focus,
+.signuppage-form textarea:focus,
+.signuppage-form select:focus {
+  border-color: #7b61ff;
+  outline: none;
+}
+
+.signuppage-form textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.signuppage-charcount {
+  font-size: 12px;
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.signuppage-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #7b61ff, #9d7dff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signuppage-button:hover {
+  opacity: 0.9;
+}
+
+.signuppage-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+}
+
+.signuppage-footer a {
+  color: #7b61ff;
+  text-decoration: none;
+}
+
+.signuppage-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .signuppage-wrapper {
+    padding: 20px 15px;
+  }
+
+  .signuppage-title {
+    font-size: 20px;
+  }
+
+  .signuppage-form h4 {
+    font-size: 16px;
+  }
+}
